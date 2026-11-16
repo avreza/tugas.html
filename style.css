@@ -1,0 +1,112 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e42a81, #dda1c4);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Judul */
+h1 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Form */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input dan Select */
+input,
+select {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+    background: #f9f9f9;
+}
+
+input:focus,
+select:focus {
+    border-color: #f383ed;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+/* Tombol */
+button {
+    padding: 13px;
+    background: linear-gradient(135deg, #ffaae1, #fc32c9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 163, 224, 0.4);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Hasil */
+.hasil {
+    margin-top: 20px;
+    padding: 18px 25px;
+    background: rgb(248, 247, 247);
+    color: #e774d8;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hasil strong {
+    color: #cc6baf;
+    font-size: 22px;
+}
+
+/* Tampilan HP */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    form {
+        padding: 22px;
+    }
+}
